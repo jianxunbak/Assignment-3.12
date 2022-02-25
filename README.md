@@ -1,4 +1,4 @@
-# Insert Lesson Title
+# Spring Boot: REST Controller
 
 ## Dependencies
 
@@ -10,10 +10,17 @@ Refer to the following markdown file for the respective sections of the class:
 ## Lesson Objectives
 
 Learners will understand:
-- Insert the knowledge to be acquired
+- What are RESTful APIs.
+- `@Controller` is a specialization of `@Component`.
+- `@RestController` is a specialization of `@Controller`.
+- The different between path variables and request parameters.
+- What are CORS and how `@CrossOrigin` works.
 
 Learners will be able to:
-- Insert the skillset to be acquired
+- Annotate a class with `@RestController` and a method with `@GetMapping`and `@RequestMapping`.
+- Extract values from URL using `@PathVariable` and `@RequestParam`.
+- Annotate a method with `@PostMapping` and extract the request body using `@RequestBody`.
+- Return data in the response body using `@ResponseBody`.
 
 
 ## Lesson Plan
