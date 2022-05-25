@@ -11,35 +11,29 @@ Refer to the following markdown file for the respective sections of the class:
 
 Learners will understand:
 - What are RESTful APIs.
-- `@Controller` is a specialization of `@Component`.
-- `@RestController` is a specialization of `@Controller`.
-- The different between path variables and request parameters.
-- What are CORS and how `@CrossOrigin` works.
+- How to create RESTful APIs with Spring Web MVC Framework
 
 Learners will be able to:
-- Annotate a class with `@RestController` and a method with `@GetMapping`and `@RequestMapping`.
-- Extract values from URL using `@PathVariable` and `@RequestParam`.
-- Annotate a method with `@PostMapping` and extract the request body using `@RequestBody`.
-- Return data in the response body using `@ResponseBody`.
-
+- Annotate a class with `@RestController`.
+- Annotate methods with `@GetMapping` and `@PostMapping`.
+- Capture data passed to the controller method using `@PathVariable`, `@RequestParam` and `@RequestBody`.
 
 ## Lesson Plan
 
 |Duration|What|How or Why|
 |--------|-----|-------|
 |- 5mins |Start zoom session|So that students can join early and start class on time|
-|15 mins|Self studies check-in|Does every students have JDK installed? Are there any questions on self-studies? If the students do not have SDK installed, they can practice in class using w3schools links provided in the self studies.|
-|15 mins|I DO Part 1|Instructor demonstrates the syntax of writing a class with main method.|
-|15 mins|WE DO Part 1|Learners write a class with main method.|
-|15 mins|I DO Part 2|Instructors demonstrate compiling and running Java code using `javac` and `java` on CLI|
-|15 mins|WE DO Part 2|Learners compile and run Java Code using `javac` and `java` on CLI|
-|5 mins| Break||
-|||**1 HR 20 MIN**|
-|15 mins|I DO Part 3| Instructor demonstrates initializing String and Integer variables and print it.|
-|15 mins|WE DO part 3| Learners initialize String, Integer, Char and Float variables. Then, print it.|
-|10 mins|Assignment briefing|
-|||**2 HR 00 MIN**|
-|40 mins|Learners self attempt on assignments|
-|20 mins|Instructors walk through at least 1 question of the assignmentsd|
-|||**END CLASS 2 HR 30 MIN**|
+|10 mins|Self studies check-in|Bridging students into the code along sessions.|
+|20 mins|Code Along| Part 1 - @RestController & @RequestMapping|
+|30 mins|Code Along| Part 2 - @GetMapping & @PostMapping|
+||**1 HR MARK**|
+|5 mins|Break|Break|
+|40 mins|Code Along| Part 3 - @PathVariable, @RequestParam and @RequestBody|
+|5 mins|Buffer|In case of overrun|
+|5 mins|Break||
+|5 mins|Assignment Briefing|Help students to understand the expectation and direction of the assignment to prevent mis-interpretations.|
+||**2 HR MARK**|
+|60 mins|Learners work on similar annotation on [CartController.java](./src/shoppingcartapi/src/main/java/com/skillsunion/shoppingcartapi/controller/CartController.java)|
+||**END CLASS 3 HR MARK**|
+
 
