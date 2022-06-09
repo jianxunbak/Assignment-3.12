@@ -2,7 +2,7 @@
 
 ### Brief
 
-Enter instruction for assignment here.
+Refer to [CartController.java](./src/shoppingcartapi/src/main/java/com/skillsunion/shoppingcartapi/controller/CartController.java) for instructions.
 
 ### Submission 
 

@@ -27,5 +27,6 @@ Technical knowledge is vast. Timebox yourself for 3 hours to work on the followi
 
 - REST Resource Naming [Link](https://restfulapi.net/resource-naming/)
 - What are CORS [Link](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
+- @RestController API Doc [Link](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/annotation/RestController.html)
 
 > Note: REST is a convention, the common standard on how you should name and design HTTP Endpoints.
