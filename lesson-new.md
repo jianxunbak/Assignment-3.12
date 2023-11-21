@@ -130,7 +130,7 @@ These are the available strategies:
 
 It is also possible to use a custom generator. You can read more about the generators [here](https://www.baeldung.com/jpa-strategies-identity-sequence-table).
 
-Next we will add the `@Column` annotation to the `name` field to specify the name of the column in the database table that this field will be mapped to.
+Next we will add the `@Column` annotation to the `id` field to specify the name of the column in the database table that this field will be mapped to.
 
 ```java
 @Id
@@ -242,7 +242,7 @@ public Customer updateCustomer(Long id, Customer customer) {
 }
 
 @Override
-public void deleteById(Long id) {
+public void deleteCustomer(Long id) {
   customerRepository.deleteById(id);
 }
 ```
@@ -301,10 +301,10 @@ The advantage of this approach is that it is independent of the database type si
 
 ## 👨‍💻 Activity
 
-Add an `Interactions` resource to our app. This will be used to store the interactions
+Add an `Interaction` resource to our app. This will be used to store the interactions
 between a customer and a salesperson.
 
-The `Interactions` resource should have the following fields:
+The `Interaction` resource should have the following fields:
 
 ```java
 private Long id;
@@ -336,7 +336,7 @@ For example:
 
 In our application, MANY interactions can be associated with ONE customer. This is known as a **many-to-one** relationship.
 
-In other words, we need to know which interactions are made with which customer. In SQL, this is done by adding a **foreign key** to the `interactions` table. A foreign key is a column that references the primary key of another table.
+In other words, we need to know which interactions are made with which customer. In SQL, this is done by adding a **foreign key** to the `interaction` table. A foreign key is a column that references the primary key of another table.
 
 For example, this is our `Customer` table:
 
