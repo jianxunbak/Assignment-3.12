@@ -128,7 +128,7 @@ These are the available strategies:
 | `GenerationType.SEQUENCE` | Indicates that the persistence provider must assign primary keys for the entity using a database sequence.                               |
 | `GenerationType.TABLE`    | Indicates that the persistence provider must assign primary keys for the entity using an underlying database table to ensure uniqueness. |
 
-It is also possible to use a custom generator. You can read more about the generators [here](https://www.baeldung.com/jpa-strategies-identity-sequence-table).
+It is also possible to use a custom generator. You can read more about the generators [here](https://www.baeldung.com/hibernate-identifiers).
 
 Next we will add the `@Column` annotation to the `id` field to specify the name of the column in the database table that this field will be mapped to.
 
