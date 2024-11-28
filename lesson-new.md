@@ -246,16 +246,43 @@ public void deleteCustomer(Long id) {
 }
 ```
 
-### Updating the Controller
+Also, the helper method `getCustomerIndex` can also be removed since we are no longer using it.
 
-Finally, we have to update the type of the id in our controller methods, since we are now using a `Long` type instead of a `String` type.
+### Updating CustomerController and CustomerService interface
+
+Finally, we have to update the type of the id in our `CustomerController` and the `CustomerService` interface, since we are now using a `Long` type instead of a `String` type for the `id`.
+
+Change `String` to `Long` in `CustomerController`:
 
 ```java
-@GetMapping("/{id}")
-public Customer findById(@PathVariable Long id) {
-  return customerService.findById(id);
+@GetMapping("{id}")
+public ResponseEntity<Customer> getCustomer(@PathVariable Long id)
+
+@PutMapping("{id}")
+public ResponseEntity<Customer> updateCustomer(@PathVariable Long id, @RequestBody Customer customer)
+
+@DeleteMapping("{id}")
+public ResponseEntity<HttpStatus> deleteCustomer(@PathVariable Long id)
+```
+
+Change `String` to `Long` in the `CustomerService` interface:
+
+```java
+public interface CustomerService {
+  Customer createCustomer(Customer customer);
+
+  Customer getCustomer(Long id);
+
+  ArrayList<Customer> getAllCustomers();
+
+  Customer updateCustomer(Long id, Customer customer);
+
+  void deleteCustomer(Long id);
+
 }
 ```
+
+For `CustomerServiceWithLoggingImpl.java`, in your free time, you can update it to use `Long` instead of `String` for the `id`, as well as the corresponding repository methods. For now, we can rename the file to `CustomerServiceWithLoggingImpl.java.old` so that we can test our code.
 
 Post a few new customers and check the H2 console as well as the `GET endpoint` to see that the data is persisted and can be retrieved correctly.
 
