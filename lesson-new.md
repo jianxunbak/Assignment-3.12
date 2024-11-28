@@ -81,15 +81,15 @@ spring.datasource.url=jdbc:h2:mem:simple-crm
 
 Start the app with `mvn clean spring-boot:run` and try accessing the H2 console at `http://localhost:8080/h2`.
 
+<img src="./assets/h2-console-login.png" width=500 />
+
 Test the connection.
 
 ### Create a JPA Entity
 
 What is an entity? It is a Java class that is mapped to a database table. The objects of this class will be managed by JPA and persisted to the database for us.
 
-<img src="https://2.bp.blogspot.com/-qNxMJPEHiBY/XJi0nsgC39I/AAAAAAAAFyo/-r7_JnV5Nak1sN_BWEMCFPU1JahkQbIAACLcBGAs/s1600/hibernate-orm-mpping-latest.png" width=500 style="background-color:white; padding: 10px 20px; border-radius: 5px; border: 1px solid grey;">
-
-> Source: https://www.javaguides.net/2020/10/defining-jpa-entity-entity-annotation.html
+<img src="./assets/simplecrm-orm-diagram.png" width=500 style="background-color:white; padding: 10px 20px; border-radius: 5px; border: 1px solid grey;">
 
 In our `Customer` class, we will add the `@Entity` annotation to indicate that it is an entity. This tells JPA that this class is to be mapped to a database table.
 
