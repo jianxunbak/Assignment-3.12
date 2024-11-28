@@ -161,7 +161,8 @@ The table should have been created for us but it has no data. Let's add some dat
 How we would do it in SQL would be something like this:
 
 ```sql
-INSERT INTO CUSTOMER VALUES('2', '12345678', 'tony@avengers.com', 'Tony', 'CEO', 'Stark', '1984');
+INSERT INTO customer (first_name, last_name, email, contact_no, job_title, year_of_birth)
+VALUES ('John', 'Doe', 'john.doe@example.com', '12345678', 'Software Engineer', 1985);
 ```
 
 But fortunately, with JPA, we do not have to write SQL statements. The ORM is the middleman between our Java code and the database. We can use Java to interact with the database.
