@@ -6,7 +6,7 @@ You might want to make a copy of the `simple-crm` project before proceeding so t
 
 ## Part 1: H2
 
-<img src="https://raw.githubusercontent.com/h2database/h2database/master/h2/src/docsrc/images/h2-logo-2.png" width=150 style="background-color:white; padding: 10px 20px; border-radius: 5px;">
+<img src="./assets/h2-logo.png" width=150 style="background-color:white; padding: 10px 20px; border-radius: 5px;">
 
 H2 is a relational database written in Java. It is very fast, open source and lightweight. This makes it useful for quick prototyping, testing and development.
 
@@ -28,9 +28,7 @@ This is useful because it allows us to use the same object-oriented code to inte
 
 The syntax of different databases can vary greatly, so using an ORM allows us to write code that is independent of the database we are using. e.g. the syntax for creating a table in MySQL is different from the syntax for creating a table in PostgreSQL.
 
-<img src="https://javabydeveloper.com/wp-content/uploads/2020/02/ORM-object-relational-mapping.png?ezimgfmt=ng:webp/ngcb330" width=500 style="background-color:white; padding: 10px 20px; border-radius: 5px; border: 1px solid grey">
-
-> Source: https://javabydeveloper.com/orm-object-relational-mapping/
+<img src="./assets/orm-diagram.png" width=500 style="background-color:white; padding: 10px 20px; border-radius: 5px; border: 1px solid grey">
 
 ## Hibernate
 
